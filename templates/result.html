@@ -1,0 +1,58 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <title>Result</title>
+      <link rel="stylesheet" type="text/css" href="../static/result.css">
+   </head>
+   <body>
+      <div class="d1">
+         <ul>
+            <li><a href="https://www.google.com/finance/">Google Finance</a></li>
+            <li><a href="https://in.finance.yahoo.com/">Yahoo Finance</a></li>
+         </ul>
+         <div class="ww2">
+            <div class="sp">
+               <h1>STOCK PREDICTION</h1>
+            </div>
+            <div class="op">
+               <h2>OUTPUT</h2>
+            </div>
+            <div class="result">
+               <div class="r1">
+                  <table border="5px" cellpadding="5px" cellspacing="5px" align="center">
+                     <tr>
+                        <td style="font-size: 30px;color: blue;">Actual Price</td>
+                        <td style="font-size: 30px;color: blue;">Linear Predicted Price</td>
+                        <td style="font-size: 30px;color: blue;">SVR Predicted Price</td>
+                     </tr>
+                     {% for x in range(0,len) %}
+                     <tr>
+                        <td>
+                           <div>{% print ("%.3f"%(a[x])) %}</div>
+                        </td>
+                        <td>
+                           <div>{% print ("%.3f"% (lp[x])) %}</div>
+                        </td>
+                        <td>
+                           <div>{% print ("%.3f"% (sp[x])) %}</div>
+                        </td>
+                     </tr>
+                     {% endfor %}
+                  </table>
+               </div>
+            </div>
+            <div class="r2">
+               <img src="https://friendlystock.com/wp-content/uploads/2018/05/5-mascot-dog-giving-presentation-cartoon-clipart.jpg " width="20%" height="25%" align="right">
+            </div>
+            <div class="plot">
+               <br>
+               <h2>Graph between Actual Price and Predicted Price</h2>
+               <img src="../static/plot.png"  height="30%" width="40%">
+            </div>
+         </div>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,46 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+   <link rel="stylesheet" type="text/css" href="../static/css/index.css">
+   <head>
+      <meta charset="UTF-8">
+      <title>Stock Prediction</title>
+      <link rel="icon" href="../static/logo/logo.png">
+   </head>
+   <body>
+      <div>
+         <div class="d1">
+            <ul>
+               <li><a href="">Home</a></li>
+               <li><a href="https://www.google.com/finance/">Google Finance</a></li>
+               <li><a href="https://in.finance.yahoo.com/">Yahoo Finance</a></li>
+            </ul>
+         </div>
+         <br>
+         <div class="d2">
+            <h1>Welcome to the Futuristic Stock Prediction </h1>
+         </div>
+         <div class="d3">
+            <div class="pic1">
+               <form action="/result" method = "POST" enctype="multipart/form-data">
+                  <label class="clr1">
+                     <h6>Upload File :</h6>
+                  </label>
+                  <input type="file" name="dataset" id="file" required /><br>
+                  <label class="clr2">
+                     <h6>Interval  :</h6>
+                  </label>
+                  <input type="number" name="interval" id="inteval" placeholder="Enter no. of days" required />
+                  <br/>
+                  <input type="submit" id="submit" value="Submit" />
+               </form>
+            </div>
+            <div class="pic2">
+               <img src="https://st3.depositphotos.com/12121852/16003/v/600/depositphotos_160038018-stock-video-prediction-hologram-futuristic-interface-augmented.jpg" width="500" height="250">
+            </div>
+         </div>
+      </div>
+   </body>
+</html>
+
